@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title>Gully Cricket</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="randomtry.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id='body'>
+	<audio controls autoplay loop style="width: 0px; height: 0px; ">
+		<source src="bgaudio1.wav" type="audio/mpeg">
+	</audio>
+	<p id='title'>*-GULLY ASHES-*</p>
+	<div class='card'>
+		<div class="card-body">
+
+			<p>SELECT ANY FIXTURE:</p>
+			<div class="container">
+				<input type="button" value="2overs" class="btn btn-dark" onclick="play2()" id='play2'>
+				<input type="button" value="5overs" class="btn btn-dark" onclick="play5()" id='play5'>
+				<input type="button" value="10overs" class="btn btn-dark" onclick="play10()" id='play10'>
+			</div>
+
+			<p></p>
+			<p id='details'>LIMITED OVER FIXTURES</p>
+		</div>
+	</div>
+	<input type="button" value="Restart" onclick="reset()" id="reload">
+	<div class="row">
+		<div class="column">
+			<div class="card" id="card">
+				<div class="card-body">
+					<h4 class="card-title" style="text-align: center;">ENGLAND</h4>
+					<input type="button" value="ENG" id="displayrun"><br>
+
+				</div>
+				<div class="card-body" id="pb">
+					<input type="button" value="HIT" class="btn btn-success" onclick="func()" id='play'>
+
+					<input type="button" value="StartNewOver" class="btn btn-primary" onclick="func1()" id='start'>
+					Overs: <input type="button" value="0" id="overs">
+					<p id='message'>MAKE A BIG TARGET</p>
+					ENG <input type="button" value="0-0" id="scard"> THIS OVER: <input type="button" value=""
+						id="score">
+					<p id='innings'>INNINGS 1</p>
+				</div> 
+			</div>
+		</div>
+		<div class="column1">
+			<div class="card " id="card">
+				<div class="card-body">
+					<h4 class="card-title" style="text-align: center;">AUSTRALIA</h4>
+					<input type="button" value="AUS" id="displarun">
+				</div>
+				<div class="card-body" id="bp">
+					<input type="button" value="HIT" class=" btn btn-success" onclick="fun()" id='pla'>
+					<input type="button" value="StartNewOver" class=" btn btn-primary" onclick="fun1()" id='star'>
+					Overs: <input type="button" value="0" id="over"><br>
+					<p><input type="button" id='chase' value='-'> RUNS ARE NEEDED TO WIN.</p>
+
+					AUS <input type="button" value="0-0" id="scar"> THIS OVER:<input type="button" value="0" id="scor">
+					<p id='inning'>INNINGS 2</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<marquee id="declare" scrollamount="25">*THE CLASH IS BACK. ITS ENG VS AUS.* - *As it is Gully Ashes, limited overs are given*</marquee>
+		<p id='titl'><span>&copy;</span> JayaSurya,2021</p>
+</body>
+<script type="text/javascript" src="randomtry.js">
+</script>
+
+</html>
