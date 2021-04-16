@@ -6,7 +6,7 @@
   background-size: cover;
     color: whitesmoke;
     font-family: cursive;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 .row{
