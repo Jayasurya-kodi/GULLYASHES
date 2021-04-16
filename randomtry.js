@@ -483,7 +483,7 @@ function fun() {
                document.getElementById('start').disabled = false;
                document.getElementById('pla').disabled = false;
                document.getElementById('star').disabled = false;
-               document.getElementById('chase').value='-';
+               document.getElementById('chase').value=0;
                
                totalw = 1;
                totalo = 1;
