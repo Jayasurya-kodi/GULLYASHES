@@ -16,7 +16,7 @@ z = "";
 b = "";
 n1 = "";
 n2 = "";
-
+document.getElementById('body').style.zoom="67%"
 document.getElementById('start').disabled = true;
 document.getElementById('pla').disabled = true;
 document.getElementById('star').disabled = true;
