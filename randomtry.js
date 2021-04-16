@@ -467,6 +467,7 @@ function fun() {
           if (scor < target - 1) {
                e = target - scor;
                document.getElementById('inning').innerHTML = 'TEAM ENGLAND WON BY ' + (e - 1) + ' RUN(S)';
+               document.getElementById('details').innerHTML='ENGLAND WON THE MATCH';
                document.getElementById('declare').style.backgroundColor = 'white';
                document.getElementById('declare').style.color = 'teal';
                document.getElementById('declare').innerHTML = '*ENGLAND WON THE MATCH BY ' + (e - 1) + ' RUN(S) BY RESTRICTING THE AUSTRALIA TO THE TOTAL ' + scor + '*';
@@ -518,12 +519,14 @@ function fun() {
      if (scor >= i) {
           e = totalw - w1;
           document.getElementById('inning').innerHTML = 'TEAM AUSTRALIA WON WITH ' + e + ' WICKET(S)';
+          document.getElementById('details').innerHTML='AUSTRALIA WON THE MATCH';
           document.getElementById('declare').innerHTML = '*AUSTRALIA SUCCESSFULLY CHASED THE TARGET ' + i + ' AND WON THE MATCH WITH ' + e + ' WICKET(S)*'
           document.getElementById('declare').style.backgroundColor = 'white';
           document.getElementById('declare').style.color = 'teal';
           document.getElementById('chase').value = 0;
           document.getElementById('pla').disabled = true;
           document.getElementById('star').disabled = true;
+          
      }
 
 
