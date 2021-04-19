@@ -214,7 +214,7 @@ function func() {
           c = 2;
           w += 1;
      } else if (c == '3+RO') {
-          c = 1;
+          c = 3;
           w += 1;
      } else if (c == 'RO') {
           c=0;
@@ -448,7 +448,7 @@ function fun() {
           c = 2;
           w1 += 1;
      } else if (c == '3+RO') {
-          c = 1;
+          c = 3;
           w1 += 1;
      } else if (c == 'RO') {
           c=0;
